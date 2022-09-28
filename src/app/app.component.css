@@ -1,0 +1,80 @@
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+    margin-top: -80px !important;;
+    background: #ffffff!important; /* dots color*/
+    border-color: #ffffff!important; /* dots border color*/
+    width: 12px;
+    height: 12px;
+  }
+  ::ng-deep .owl-theme .owl-dots .owl-dot span:hover {
+
+    background-color: #ffffff!important; /* dots border color*/
+
+  }
+::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+ .owl-theme .owl-dots .owl-dot:hover span {
+   background: transparent !important; /*active and on hover color*/
+   border-color: #ffffff!important; /* dots border color*/
+  
+    opacity: 1;
+  
+ }
+::ng-deep .owl-carousel .owl-stage-outer {
+    border-radius: 8px !important; /* border radius*/
+ }
+::ng-deep .owl-theme .owl-nav .owl-prev{
+    padding: 0px!important;
+    z-index: 100;
+    cursor: pointer;
+    background: rgba(255,255,255,.7);
+    color: #343f52;
+    box-shadow: 0 0.25rem 0.75rem rgb(30 34 40 / 2%);
+    line-height: 40px;
+    border-radius: 50%;
+    text-shadow: none;
+    transition: all .2s ease-in-out;
+    pointer-events: all;
+    width:44px;
+    height:44px;
+    margin: 0px!important;
+    align-items: center;
+
+}
+::ng-deep .owl-theme .owl-nav .owl-prev:hover{
+    background: #ffffff!important;
+
+}
+::ng-deep.owl-theme .owl-nav .owl-next:hover{
+    background: #ffffff!important;
+
+}
+::ng-deep.owl-theme .owl-nav .owl-next{
+    align-items: center;
+    line-height: 40px;
+    padding: 0px!important;
+    margin: 0px!important;
+    z-index: 100;
+    cursor: pointer;
+    background: rgba(255,255,255,.7);
+    color: #343f52;
+    box-shadow: 0 0.25rem 0.75rem rgb(30 34 40 / 2%);
+    text-align: center;
+    border-radius: 50%;
+    text-shadow: none;
+    transition: all .2s ease-in-out;
+    pointer-events: all;
+    width:44px;
+    height:44px;
+}
+
+::ng-deep .owl-carousel .owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 1;
+}

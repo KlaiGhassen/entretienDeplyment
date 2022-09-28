@@ -1,0 +1,83 @@
+<section
+  class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 bg-content text-white"
+  style="background-image: url('./assets/img/photos/bg4.jpg')"
+  data-image-src="./assets/img/photos/bg4.jpg"
+>
+  <div class="container pt-18 pb-16" style="z-index: 5; position: relative">
+    <div class="row gx-0 gy-12 align-items-center">
+      <div
+        class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start"
+      >
+        <h1
+          class="display-2 mb-5 text-white"
+          @fade
+          (@fade.done)="animationDone($event)"
+        >
+          Crafting project specific solutions with expertise.
+        </h1>
+        <p
+          [@SecondFade]="isDivIn ? 'true' : 'false'"
+          class="lead fs-lg lh-sm mb-7 pe-xl-10"
+        >
+          We’re a creative company that focuses on establishing long-term
+          relationships with customers.
+        </p>
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <span
+            ><a href="#" class="btn btn-lg btn-white rounded-pill me-2"
+              >Explore Now</a
+            ></span
+          >
+          <span
+            ><a href="#" class="btn btn-lg btn-outline-white rounded-pill"
+              >Contact Us</a
+            ></span
+          >
+        </div>
+      </div>
+      <!--/column -->
+      <div class="col-lg-5 offset-lg-1">
+        <owl-carousel-o [options]="customOptions">
+          <div></div>
+
+          <ng-container *ngFor="let slide of slidesStore">
+            <ng-template carouselSlide [id]="slide.id">
+              <ng-container *ngIf="slide.type === 'video'">
+                <button
+                (click)="openVedioPlayer()"
+                  class="btn btn-circle btn-white btn-play ripple mx-auto mb-5 position-absolute"
+                  style="
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 3;
+                  "
+                  data-glightbox
+                  data-gallery="hero"
+                  ><i class="icn-caret-right"></i
+                ></button>
+              </ng-container>
+              <img [src]="slide.src" [title]="slide.title" />
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+
+        <!-- /.basic-slider -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /section -->
+<app-what-we-do></app-what-we-do>
+<!-- /section -->
+<app-why-choose-us></app-why-choose-us>
+<!-- /section -->
+<app-our-solution></app-our-solution>
+<!-- /section -->
+<app-ourteam></app-ourteam>
+<!-- /section -->
+<!-- /.content-wrapper -->
+<app-up-button></app-up-button>

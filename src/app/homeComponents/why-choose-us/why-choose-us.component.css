@@ -1,0 +1,25 @@
+.card-footer {
+    padding: 1.25rem 1.75rem 1.25rem;
+    cursor: grab;
+}
+.item{width:430%}
+::ng-deep .position-relative .owl-theme .owl-dots .owl-dot span {
+    margin-top: 8px !important;
+    background: transparent!important; /* dots color*/
+    border-color: #d0d4db!important; /* dots border color*/
+    width: 12px;
+    height: 12px;
+  }
+  ::ng-deep .owl-theme .owl-dots .owl-dot span:hover {
+
+    background-color: #ffffff!important; /* dots border color*/
+
+  }
+  .hover-scale:hover{
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }

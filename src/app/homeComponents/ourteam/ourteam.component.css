@@ -1,0 +1,7 @@
+::ng-deep .col-xxl-9 .owl-theme .owl-dots .owl-dot span {
+    margin-top: 2px !important;
+    background: transparent!important; /* dots color*/
+    border-color: #d0d4db!important; /* dots border color*/
+    width: 12px;
+    height: 12px;
+  }

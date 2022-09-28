@@ -1,0 +1,10 @@
+.bg-bttn{
+    background: rgba(116,126,209,.7)!important;
+    color: #ffffff!important;
+    }
+    .sticky{
+    position: fixed;
+    z-index:999;
+    width: 100%;
+    }
+   
